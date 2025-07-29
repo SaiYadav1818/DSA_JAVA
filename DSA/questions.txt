@@ -1,0 +1,37 @@
+burger
+diamond
+pattern
+valley
+string sort
+binary representation
+pattern even
+sliding window difference
+swap count
+ternary array
+peak element
+->1
+12
+111111
+look and say
+->shirt and pant
+->transpose 
+->row zero and col zero (seprate set)
+Interchange Diagonals
+pascal triangle
+Check for subsequence(gfg)
+rank of string
+distint elements in an subarray
+longest common subsequence without vowels
+Length of the longest substring
+Longest Common Substring
+Longest substring with distinct characters
+Substrings of length k with k-1 distinct elements
+Longest Common Substring
+Smallest distinct window
+Best Time to Buy and Sell Stock IV
+Longest repeating and non-overlapping substring
+count anagram
+rotated binary search using recursive
+
+1671. Minimum Number of Removals to Make Mountain Array
+76. Minimum Window Substring

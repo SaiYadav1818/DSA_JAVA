@@ -1,0 +1,61 @@
+https://chatgpt.com/share/68735e99-fad4-8006-b933-a75c7a52c903
+**  className="button-style"  in react js
+
+.main{
+padding:20px;
+text-align:center;
+ font-family: Arial, sans-serif;
+}
+
+.box{
+ width: calc(20% - 20px);
+  min-width: 150px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: left;
+  background-color: #f9f9f9;
+}
+
+.eachBoxSetting{
+ display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.forMiddleBox  (modal){
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+ display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-style {
+  background-color: black;
+  width: 85px;
+  height: 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button-style:hover {
+  background-color: rgb(213, 13, 100);
+  color: rgb(218, 140, 31);
+}
+justify-content:space-evenly;
+justify-content:space-around;
+justify-content:flex-end or center
+flex-wrap:wrap
+flex-wrap:wrap-reverse
+flex-direction:row,column,
+align-item:center
+align-item:flex-start
+align-item:center;
+align-item:baseline
+

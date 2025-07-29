@@ -1,0 +1,281 @@
+Date:8/7/2025
+youtube vedio:https://youtu.be/dz458ZkBMak?si=xPLKxyBzqsRUA5ra
+https://chatgpt.com/share/686da043-e620-8006-9ff3-bb8c3d950385
+I)app.js render index.js by root which is from div tag in index.html
+II)C:\Users\dudim\OneDrive\Desktop\:  viteReact1,viteReac2Todo (folder) in desktop,viteReact3,viteReact4,viteReact4UnitTesting,viteReactBootstrap1
+npm create vite@latest my-vite-app
+VITE_REACT_1 FOLDER
+III) create folder in src and in that give name as index.jsx
+** create folder in src2 and in that folder create files (class and function components)
+** no one using class component (which is created byusing extends component and render())
+** export component in file which we current using file and import it  in app.jsx like <Component-Based/> (function name in file which is saved in component folder) 
+** like Syntax :export default functionName1
+
+** nested components
+create two components(folder) in src  create file each of them and one file import it in app.jsx as same above ad other import in first file
+app->parent
+first file(parent to second file)
+second file
+// Directory Structure:
+
+src/
+├── components/
+│   └── Parent/
+│       ├── Parent.jsx
+│       └── Child/
+│           └── Child.jsx
+└── App.jsx
+
+// File: src/App.jsx
+import React from 'react';
+import Parent from './components/Parent/Parent';
+
+function App() {
+  return (
+    <div>
+      <h1>App Component</h1>
+      <Parent />
+    </div>
+  );
+}
+
+export default App;
+
+// File: src/components/Parent/Parent.jsx
+import React from 'react';
+import Child from './Child/Child';
+
+function Parent() {
+  return (
+    <div>
+      <h2>Parent Component</h2>
+      <Child />
+    </div>
+  );
+}
+
+export default Parent;
+
+// File: src/components/Parent/Child/Child.jsx
+import React from 'react';
+
+function Child() {
+  return <p>I am the Child component</p>;
+}
+
+export default Child;
+
+
+
+ we can create compnonet in app.jsx that we don't  need to export 
+
+
+why we need to install node
+
+**{} for dynamic data which we are writing in  jsx form
+ **use map to render the dummy data this return key props error try to give two parameters like item ,index in <li keys={index}
+props is data pass from one component to another
+
+**give name,city to import componenet(app.jsx) (listofprocu={dummyProducr})  **listodprocu.map(item,key)=>{<component singledata={item}/> componet(singledata){ {singledata
+** that we can render using detructuring like function produc(props){ const{name,city} =props
+** import "./style.css"
+** import style "/style.module.css" 
+style.module.css: button:{red:color}  className={style.button} inline style
+** or style={padding:20px}
+
+
+**function fun(flag){ return flag?  ("hh"):("ee")}  return ( {fun(true)}
+
+or const what=flag?"hh":"ee"  return ({what})
+
+
+useEffect used in only run once reload the page 
+eg: useEffect(()=>{setCount(!flag) });
+
+usEffect also used in certain count value we can change the style or anything further
+eg: useEffect(()->{if(count==10) setChangeColor(!flag) },[count]}
+ useEffect(() => {
+    console.log('🟢 Mounted');
+
+    return () => {
+      console.log('🔴 Unmounted');
+    };
+  }, []);
+
+  // Update
+  useEffect(() => {
+    if (count > 0) {
+      console.log('🔁 Updated: count changed to', count);
+    }
+  }, [count]);
+
+async function fetchAllUser(){
+try{
+const api=await fetch("fetch('https
+://dummyjson.com/users')
+const result=api.json();
+console.log(result)
+if(result?.user){
+setCount(result?.user);
+}
+else{
+setCount([]);}
+}
+catch (error){console.log(error)
+useEffect(()=>fetchAllUser(),[])
+
+users && users.length>0 ?map:"no user found"
+
+Project:
+ 1.create component 2.fetch && setState &&  3.map 4.button 5)useEffect 6)useContext 7) useReducer
+
+useContext:
+(index.jsx):
+import {creatContext} from "react";
+export const GlobalContext=createContext(null)
+function GlobalState({children}) {
+                                                       const [theme,setTheme]=useState('light')
+                                                       write this in the place of function changeTheme()=>{ setTheme(theme==='light'?'dark':'light')}
+return <GlobalContext.Provider value={{theme,setTheme}}>{children} </GlobalContext>
+} export default GlobalState
+
+now rap this main.jsx:
+<GlobalState>
+<App/>
+<GlobalState>
+
+**create two components ad import in app.jsx
+text                                                                                             button
+eg: function com()=>{ const {theme}=useContext(GlobalContext)                                        same but give setTheme like const {setTheme,theme}=use""
+return( <h1 style={{fontsize:theme==='light'?'50':'100px'}}> hello</h1>)                            Onclick={()=> setTheme(theme==='light'?'dark':'light')
+
+
+
+global concept : main.jsx,index.jsx,change.jsx,toggle.jsx,app.jsx
+ useReducer:
+create function and create three buttons like hide,show ,toggle text and const [state, dispatch] = useReducer(reducer, initialState);
+const intialState={ show:false,changeText:false}
+function reducer(state,action){switch(action.type){ case hide_text return {..state ,show:!state.show} break; case
+const hide_text='hide_text'
+button onClick={()=>dispatch ({action.type=hide_text})}
+10/7/2025
+TODO LIST:
+npm install @mui/material @emotion/react @emotion/styled
+'https://dummyjson.com/todos/add'
+create three useState with new empty array ,null(error) and false
+fetch the data and set state as true before fetching
+import classes from 'style.module.css'
+<div className={classes.wrraper}>
+check condtion if todos.length are >0  arrr(res?.todos) erro('') loading(true)
+map if length>0
+when you you pass the prop to other component return (<Card  sx={{}}> <CardContent> <TypoGrapy variant="h5" color={"text.secondary"}>  </> </> <CardAction> <Button sx={{}}>
+create 2 usestate like open and add details
+
+pass as the id to another componenent by button and that component fetch the details by this id open the dialougue
+3:20 vedio
+
+input( form handling)
+custom hooks 
+routing (npm install react-routing) <browserRouter> in main.jsx create folders in src and in that create components give <routes><route path="">
+useNavigate
+<Link  to=''>
+useParams for dynamic routing
+useLocation
+custom routes
+use fetch
+use swr
+use id
+use counter
+use local storage
+usesession storage
+zod(react hook form)
+use window resize (useLauoutEffect)
+use ref
+use memo 
+use call back
+
+when you call two component  at a time when map data use key in div 
+
+npm install react-hook-form (useForm,
+VITE_REACT2 FOLDER:
+npm install @mui/material @emotion/react @emotion/styled
+npm create vite@latest my-vite-app
+
+
+** common form and common input in his GitHub
+** tailwind css
+**create details in the box in food images when click details i want different pages (dynamic),again create button ,when click button change the path,again back to the previous page
+** screenshot cartCss.png
+** diable the button
+** adding amount and when add the card ,increasing quantatiy
+**loading  page
+**go through shoping cart page for the useContext
+**css ,bootstrap,html,id,previous projects
+
+
+UNIT TSTING USING JEST AND REACT TESTING LIBRARY
+
+
+testing create folder in desktop (viteReact4)
+npm create vite@latest teting_app
+npm install -D @babel/preset-env @babel/preset-react @testing-library/react @testing-library/jest-dom jest-environment-jsdom @testing-library/user-event
+npm install --save-dev jest @babel/preset-env @babel/preset-react babel-jest @testing-library/react @testing-library/jest-dom @testing-library/user-event
+add this in "script":{ "test":"jest"} in  package.json
+create two file like
+i) .babelrc 
+    {
+    "presets": [
+        "@babel/preset-env",
+        ["@babel/preset-react", {"runtime" : "automatic"}]
+    ]
+}
+ii)jest.config.cjs
+module.exports = {
+  testEnvironment: "jsdom",
+};
+
+
+
+
+
+
+
+*****PS C:\Users\dudim\OneDrive\Desktop\viteReact4\testing> npm install -D @babel/preset-env @babel/preset-react @testing-library/react @testing-library/jest-dom jest-environment-jsdom @testing-library/user-event
+
+
+
+
+*****PS C:\Users\dudim\OneDrive\Desktop\viteReact4\testing> npm uninstall jest-environment-jsdom
+
+
+
+
+
+
+***PS C:\Users\dudim\OneDrive\Desktop\viteReact4\testing> npm list jest babel-jest @babel/preset-env @babel/preset-react
+
+
+
+
+PS C:\Users\dudim\OneDrive\Desktop\viteReact4\testing> npm run test
+
+> testing@0.0.0 test
+> jest
+
+(node:27900) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ PASS  src/test/Helloworld.test.jsx
+  √ render the helloworld testing (50ms)                                                                        
+                                                                                                                
+Test Suites: 1 passed, 1 total                                                                                  
+Tests:       1 passed, 1 total                                                                                  
+Snapshots:   0 total
+Time:        4.557sReact4\testing> 
+
+
+
+npm install react-toastify
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+<ToastContainer position="top-right" autoClose={3000} /> (under <App/> )
+import 'bootstrap/dist/css/bootstrap.min.css';

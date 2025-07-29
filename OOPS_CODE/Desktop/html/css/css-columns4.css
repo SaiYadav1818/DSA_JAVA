@@ -1,0 +1,164 @@
+body{
+padding:0px;
+margin:0px;
+background-color:white;
+}
+#main {
+	width:100%;
+height:auto;
+display:block;
+margin:auto;
+background-color:white;
+}
+.header1{
+	width:100%;
+height:auto;
+display:flex;
+margin:auto;
+background-color:white;
+}
+.box{
+width:80%;
+height:30px;
+float:left;
+background-color:blue ;
+padding-bottom:11px;
+}
+.box2 {
+width:20%;
+height:120px;
+background-color:white;
+float:left;
+}
+.box1{
+	width:20%;	
+	height:30px;
+	background-color:blue;
+	float:right;
+}
+
+.header2{
+display:flex;
+}
+.header2 a{
+color:black;
+text-decoration:none;
+padding:3px;
+}
+.header2 ul{
+font-size:20px;
+font-family:arial;
+margin:0px;
+padding:0px;
+}
+.header2 li{
+float:left;
+padding:11px;
+list-style-type:none;
+background-color:white;
+margin-left:8px;
+line-height:1px;
+}
+.header2 li a:hover{
+background-color:green;
+padding:5px;
+}
+.header2 li a:hover{
+background-color:skyblue;
+}
+.box3 {
+width:20%;
+height:120px;
+background-color:white;
+float:right;
+}
+.box4{
+width:100%;
+height:50px;
+float:left;
+font-family:arial;
+padding-left:30px;
+color:blue;
+}
+h4{
+color:white;
+font-family:Lucida Console;
+}
+h3{
+	color:black;
+font-family:Lucida Sans Typewriter;
+}
+.header3 {
+display:flex;
+}
+.header5 {
+display:flex;
+width:80%;
+margin:auto;
+}
+.header6 {
+display:flex;
+width:80%;
+margin:auto;
+}
+h1{
+text-align:center;
+color:blue;
+padding-bottom:2px;
+	font-family:Lucida Sans Unicode;
+}
+.box5 {
+width:100%;
+height:50px;
+background-color:#54595F;
+
+}
+.box7{
+width:25%;
+height:200px;
+float:left;
+}
+.box8{
+width:25%;
+height:200px;
+float:right;
+}
+.project{ 
+		  display:flex;
+		  width:80%;
+		  margin:auto;
+}
+.box9{
+width:25%;
+height:200px;
+float:left;
+}
+.box10{
+width:25%;
+height:200px;
+float:right;
+}
+.box11 h1{
+width:100%;
+text-align:center;
+color:blue;
+padding-bottom:2px;
+background-color:white;
+height:50px;
+float:left;
+}
+.box12{
+width:33%;
+height:200px;
+float:right;
+}
+.box13{
+width:33%;
+height:200px;
+float:right;
+}
+.box14{
+width:33%;
+height:200px;
+float:right;
+}

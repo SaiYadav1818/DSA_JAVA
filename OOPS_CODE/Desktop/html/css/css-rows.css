@@ -1,0 +1,67 @@
+body{
+background-color:green;
+margin:0px;
+padding:0px;
+}
+#main{ width:80%;
+height:900px;
+background-color:white;
+margin:auto;
+padding:0px;
+}
+.header{
+width:100%;
+	height:50px;
+	background-color:orange;
+	margin:0px;
+padding:0px;
+}
+.second{
+	width:100%;
+	height:300px;
+	background-color:red;
+	margin:0px;
+	padding:0px;
+}
+.third
+{
+width:100%;
+height:400px;
+background-color:pink;
+padding:0px;
+margin:0px;
+overflow:hidden;
+}
+.fourth{
+width:100%;
+height:150px;
+background-color:blue;
+padding:0px;
+margin:0px;
+overflow:hidden;
+
+}
+h1{
+	font-family:Lucida Handwriting;
+	color:blue;
+	text-align:center;
+	padding:10px;
+}
+h2{
+color:blue;
+text-align:center;
+font-family:Lucida Handwriting;
+padding-top:7px;
+}
+p{font-family:arial;
+font-size:18px;
+text-align:justify;
+line-height:30px;
+padding:10px;
+}
+h4{
+	color:yellow;
+	font-family:Maiandra GD;
+	text-align:center;
+	padding-top:9px;
+}

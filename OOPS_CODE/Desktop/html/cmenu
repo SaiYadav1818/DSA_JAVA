@@ -1,0 +1,48 @@
+<html>
+<head>
+<title> MENUS</title>
+<style>
+ul{
+font-size:20px;
+font-family:arial;
+margin:0px;
+padding:0px;
+}
+li{
+float:left;
+padding:20px;
+list-style-type:none;
+background-color:orange;
+}
+li a{
+color:white;
+text-decoration:none;
+padding:20px;
+}
+li a:hover{
+background-color:green;
+color:red;
+}
+</style>
+</head>
+<body> 
+<ul>
+<li>
+<a href="css-tables2.html">MINSTERS </a></li>
+<li> <a href="file:///E:/html/html-colomns7.html">ABOUT
+</a>
+</li><li>
+<a href="https://www.facebook.com/"target="blank">FB
+</a>
+</li>
+<li>
+<a href="https://en.wikipedia.org/wiki/Virat_Kohli"target="blank">Virat_Kohli
+</a>
+</li>
+<li>
+<a href="https://contacts.google.com/"target="blank">CONTACT
+</a>
+</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,145 @@
+
+https://chatgpt.com/share/6873aad5-2b94-8006-aae4-e475999e25bb
+1)When to Use the Two Pointers Technique:
+
+The two pointers technique is a powerful tool used when you're working with:
+
+Arrays or strings
+
+Searching for subarrays, pairs, or substrings
+
+When the data is sorted or you can control the movement of the pointers
+***Decode String   s = "3[a]2[bc]" Output: "aaabcbc"
+
+
+
+
+2)Why Stack Doesn't Help Here? ::
+Stacks are useful when:
+
+You need to track previous elements (e.g., for Next Greater Element I & II, Largest Rectangle in Histogram, Balanced Parentheses, Online Stack (Stack<int[]> ),Daily Temptreatureetc.)
+decoded string ,Remove K Digits,
+You are going backwards or need LIFO order
+
+
+3)pointer is also used in  (bar) part like height
+4)Remove Duplicates from Sorted Array II
+5)Longest Substring Without Repeating Characters (shrink window means removing left from set)
+6) next palindrome
+7) next permutation
+8)rabin karp
+6) HashMap (with Prefix Sum)
+Examples of Problems:
+Problem Type	Technique
+. Count Number of Nice Subarrays
+. Binary Subarrays With Sum
+ Contiguous Array
+Subarray Sums Divisible by K
+Range sum queries (static array)	Prefix Sum only
+Count subarrays with sum k	Prefix Sum + HashMap
+Subarrays with equal number of 0s and 1s	Prefix Sum + HashMap (convert 0 → -1)
+Longest subarray with sum k	Prefix Sum + HashMap (store first occurrence of sum)
+
+
+7)i given a preference like e,b,c,d
+map.put(e,0);
+map.put(b,1)..so on
+if i have : hello->c  hi->e bye->d
+output :[hi,hello,bye]
+list[[hello,c],[hi,e],[bye,d]];
+list.sort((a,b)->{int cmp=Integer.compare(a[1],b[1])) if(cmp==0)return a[0].compareTo(b[0]) return cmp});
+for(String[] pair:list){print(pair[0])}
+ 
+8)central mid expansion:
+palindrome Substrings
+Longest Palindromic Substring(maxlen=len;start=i-(len-1)/2;)
+
+
+9)sb.deleteCharAt(p1) Character.isDigit() Character.isLetter() Character.isLowerCase() Character.isUpperCase() Character.toLowerCase() Character.toUpperCase() sb.toString().equals(sb.reverse().toString()) s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();   str.matches("[a-zA-Z-0-9_]+")
+**if c[i]=='8' then int num=c[i]-'0'; 
+
+
+10)closet prime number
+11)Kadane's Algorithm(max sum subarray)
+
+12)gcd 
+   if (b == 0) {
+            return a;  // base case
+        }
+        return gcd(b, a % b);  // recursive step
+    }
+
+
+
+13)  PriorityQueue<Integer> pq = new PriorityQueue<>();
+      PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+poll()
+I)1046. Last Stone Weight(best example for heap ds)
+ii)finding running median :(use max and min) and balanace it by if min<max (size) then poll of max and it into the min initially we must add min eleent into max .if both the size are same then find median max and min peek elements and find median else min peek element only
+there is lazy deletion process using hashMap
+put removing element into the hashMap and check condition remove<=max call prone(max,map)else prone(min,map) after adding element and balancing add call the prone fun both min and max
+ii)finding k largest element
+
+14) Graph:https://chatgpt.com/share/686de372-46cc-8006-b811-54615b57aeb0
+I)whether the  source to destination is there or not (bfs or dfs),undirected graph ,unweighted graph
+II)how many connected components
+III)cycle or not visit all nodes first node will come and check whthere it dfs  check it neighbors check if it not visited call dfs only if parent ===neighbor then return tru ift means cycle is there 
+IV)547. Number of Provinces(do)
+V)684. Redundant Connection
+
+
+15)deque data structure
+i)Sliding Window Maximum:
+I)removing window  II)maintaining greater element III)adding index IV)if correct window s there add max element into the array
+ii)First negative in every window of size k
+
+
+16)Kadane's Algorithm used for max subarray sum
+
+17)
+for number Integer.compare
+import java.util.*;
+
+public class SortMapByValueThenKey {
+    public static void main(String[] args) {
+        Map<String, Integer> map = new HashMap<>();
+        map.put("banana", 2);
+        map.put("apple", 1);
+        map.put("cherry", 2);
+        map.put("date", 1);
+
+        List<Map.Entry<String, Integer>> list = new ArrayList<>(map.entrySet());
+
+        Collections.sort(list, (e1, e2) -> {
+            int cmp = e1.getValue().compareTo(e2.getValue());
+            if (cmp == 0) {
+                return e1.getKey().compareTo(e2.getKey()); // Sort by key if values are equal
+            }
+            return cmp;
+        });
+
+        for (Map.Entry<String, Integer> entry : list) {
+            System.out.println(entry.getKey() + " => " + entry.getValue());
+        }
+    }
+}
+
+
+linked list;Cycle Detection
+402. Remove K Digits
+Given string num representing a non-negative integer num, and an integer k, return the smallest possible integer after removing k digits from num.
+
+18)do tries in 
+i)max xor element
+ii) Longest Common Prefix
+iii)Find the Length of the Longest Common Prefix
+iv)Max Rhyming Word Length (si)
+
+
+19) distinct window using hashMap
+
+
+20)I)check if a string matches only digits that is **str.matches("//d+")
+  II)check if a string rotation are not ** both len equal and str(s1+s1).contains(s2);
+  III)convert lower case to upper case using char-32
+  IV)remove all non-alphabetic Character str.replaceAll("[^a-zA-Z]","")

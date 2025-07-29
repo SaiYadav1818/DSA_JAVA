@@ -1,0 +1,3 @@
+class pascal25 {
+    
+}

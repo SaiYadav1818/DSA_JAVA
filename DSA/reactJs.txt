@@ -1,0 +1,76 @@
+Date:8/7/2025
+https://chatgpt.com/c/686cdfdf-cfc8-8006-b89d-41e12a407895
+https://github.com/Ovi/DummyJSON
+function app(name){
+return name;
+}
+let a=false;
+b=true;
+console.log(a && app("sai"))
+output:false //even one false it returns false 
+
+
+||(or):
+console(a || app("sai"))
+output :true //even one is true it returns true;
+
+ternary operator:
+show=true;
+show? app("true") :app("false")
+
+json fromat:
+const id = 1;
+const name = "hello";
+const product = { id, name };
+console.log(product); // { id: 1, name: 'hello' }
+const { name: productName } = product;
+console.log(productName); // hello
+
+Destructuring:
+Destructuring is a way to unpack values from arrays or objects into separate variables, in a clean and readable way.
+eg:
+1.object destructring
+const person = {name: "Sai",age: 22,country: "India"};const { name, age } = person;console.log(name); // "Sai" console.log(age);  // 22
+const { name: userName, country: userCountry } = person;console.log(userName);   // "Sai" console.log(userCountry); // "India"
+
+ 2. Array Destructuring
+const numbers = [10, 20, 30];
+const [a, b] = numbers;
+console.log(a); // 10
+
+3.Skipping elements:
+const [first, , third] = [1, 2, 3];console.log(third); // 3
+
+4.Function Parameters Destructuring
+
+function greet({ name, age }) {
+  console.log(`Hello ${name}, age ${age}`);
+}
+
+const user = { name: "Sai", age: 22 };
+greet(user); // Hello Sai, age 22 
+
+
+find only return one
+filter return all which is satisfy condition
+
+const getNamewithsai=product.map(singlePerson,index){
+return singlePerson.name=="sai"}
+
+every must satisfy all condition
+some opposite
+includes
+indexOf
+
+
+
+
+
+
+
+
+
+
+
+
+
